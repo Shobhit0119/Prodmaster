@@ -28,15 +28,17 @@
   <!-- Right login column -->
   <main class="right">
     <div class="card">
-      <h1>Log in</h1>
-      <p class="welcome">Welcome back!</p>
+      <div class="card-head">
+        <h1>Log in</h1>
+        <p class="welcome">Welcome back!</p>
+      </div>
 
       <form (ngSubmit)="onLogin()" #f="ngForm" novalidate>
-        <label class="label">Email</label>
-        <input type="email" name="email" [(ngModel)]="email" required class="input" placeholder="you@company.com" />
+        <label class="label" for="email">Email</label>
+        <input id="email" type="email" name="email" [(ngModel)]="email" required class="input" placeholder="you@company.com" />
 
-        <label class="label">Password</label>
-        <input type="password" name="password" [(ngModel)]="password" required class="input" placeholder="Password" />
+        <label class="label" for="password">Password</label>
+        <input id="password" type="password" name="password" [(ngModel)]="password" required class="input" placeholder="Password" />
 
         <div class="row">
           <label class="remember"><input type="checkbox" name="remember" [(ngModel)]="remember" /> Remember me</label>
