@@ -1,4 +1,5 @@
 .page {
+  /* Root layout: two columns (branding + login). Keep this simple to learn. */
   min-height: 100vh;
   display: flex;
   gap: 24px;
@@ -6,8 +7,8 @@
   box-sizing: border-box;
   background: linear-gradient(180deg, #eef2ff 0%, #f7f9ff 100%);
   font-family: Inter, Roboto, Arial, sans-serif;
+  align-items: center; /* vertically center left & right columns */
 }
-
 /* Left column - branding */
 .left {
   flex: 1;
