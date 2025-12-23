@@ -47,12 +47,6 @@
 }
 
 /* Logo and brand text */
-.logo-wrap {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  z-index: 1;
-}
 .top-left-brand {
   position: absolute;
   top: 20px;
